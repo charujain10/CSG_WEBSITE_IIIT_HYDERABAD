@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSG Admin - Add Data</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="logoutButton">Logout</button>
+        
+
+        <form id="imageUploadForm" class="form" enctype="multipart/form-data">
+            <h1>Add Student</h1>
+            <label for="imageInput" class="custom-file-input">Insert Student Image</label>
+            <input type="file" id="imageInput" accept="image/*"><br><br>
+
+            <label for="titleInput">Title:</label>
+            <input type="text" id="titleInput">
+
+
+
+            <label for="descriptionInput">Description:</label>
+            <textarea id="descriptionInput"></textarea>
+
+            <button type="submit">Add Student</button>
+        </form>
+
+        
+        <form id="facultyImageUploadForm" class="form" enctype="multipart/form-data">
+            <h1>Add Faculty</h1>
+            <label for="facultyImageInput" class="custom-file-input">Insert Faculty Image</label>
+            <input type="file" id="facultyImageInput" accept="image/*"><br><br>
+
+            <label for="facultyTitleInput">Title:</label>
+            <input type="text" id="facultyTitleInput">
+
+            <label for="facultyDescriptionInput">Description:</label>
+            <textarea id="facultyDescriptionInput"></textarea>
+
+            <button type="submit">Add Faculty</button>
+        </form>
+
+
+
+      
+        
+        <form id="publicationDataForm" class="form">
+            <h1>Add Publication</h1>
+            <label for="publicationTitleInput">Publication Title:</label>
+            <input type="text" id="publicationTitleInput">
+
+            <label for="publicationDateInput">Publication Date:</label>
+            <input type="text" id="publicationDateInput">
+
+            <label for="publicationDescriptionInput">Publication Description:</label>
+            <textarea id="publicationDescriptionInput"></textarea>
+
+            <button type="button" id="addPublicationButton">Add Publication</button>
+        </form>
+
+
+        
+        <form id="projectDataForm" class="form">
+            <h1>Add Project</h1>
+            <label for="projectTitleInput">Project Title:</label>
+            <input type="text" id="projectTitleInput">
+
+            <label for="projectFacultyInput">Faculty:</label>
+            <input type="text" id="projectFacultyInput">
+
+            <label for="projectCompanyFundInput">Company Fund:</label>
+            <input type="text" id="projectCompanyFundInput">
+
+            <label for="projectDateInput">Project Date:</label>
+            <input type="text" id="projectDateInput">
+
+            <label for="projectSummaryInput">Project Summary:</label>
+            <textarea id="projectSummaryInput"></textarea>
+
+            <button type="button" id="addProjectButton">Add Project</button>
+        </form>
+
+
+        
+        <form id="focusSevenForm" class="form">
+            <h1>Update FocusSevenPublication</h1>
+            <label for="FocuspublicationTitleInput">Title:</label>
+            <input type="text" id="FocuspublicationTitleInput" name="title" required><br>
+
+            <label for="FocuspublicationAuthorInput">Author:</label>
+            <input type="text" id="FocuspublicationAuthorInput" name="author" required><br>
+
+            <label for="FocuspublicationLinkInput">Link:</label>
+            <input type="text" id="FocuspublicationLinkInput" name="link" required><br>
+
+            <label for="FocuspublicationIndexInput">Index:</label>
+            <input type="number" id="FocuspublicationIndexInput" name="index" required><br><br>
+
+            <button type="button" id="addFocusSevenPublicationButton">Submit</button>
+        </form>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

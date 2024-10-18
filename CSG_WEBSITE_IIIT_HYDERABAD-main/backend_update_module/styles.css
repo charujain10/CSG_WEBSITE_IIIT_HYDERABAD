@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.form {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Optional: Add hover effects for other elements if desired */
+
+.form{
+    padding:5%;
+}
+
+.form:hover {
+    
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    border-radius: 5%;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    border: 1px solid #3498db;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+input[type="file"]:hover {
+    border: 1px solid #3498db;
+    transition: border 0.3s;
+}
+
+input[type="file"]:focus {
+    outline: none;
+}
+
+/* Add more styling as needed for other form elements */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Apply button styles to the label */
+.custom-file-input {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .custom-file-input:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Hide the actual file input */
+  #imageInput {
+    display: none;
+  }
+  
+  #facultyImageInput {
+    display: none;
+  }
+  
+
+  #logoutButton {
+    width: 10%;
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+}
